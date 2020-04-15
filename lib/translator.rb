@@ -25,7 +25,7 @@ def get_english_meaning(file_path,emoticon)
  emoticons = load_library(file_path)
  emoticons.each do |key,value|
    if emoticon == value[:japanese]
-     return value[:english]
+     return key
       end
    end
  "Sorry, that emoticon was not found"
